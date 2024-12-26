@@ -359,7 +359,7 @@ void converterMassa(){
 }
 
 
-// Conversor de energia - Giltean Tavares
+// Conversor de energia - Giltean Tavares (https://github.com/Giltean)
 
 void converterEnergia() {
     int opcao;
@@ -461,7 +461,7 @@ int main() {
         float valor;
         int op;
         printf("Escolha uma das opções de conversor:\n");
-        printf("1 - Comprimento\n2 - Massa\n3 - Volume\n4 - Temperatura\n5 - Velocidade\n6 - Potência\n7 - Área\n8 - Tempo\n9 - Armazenamento\n10 - Conversor de energia\n0 - Sair\n");
+        printf("1 - Comprimento\n2 - Massa\n3 - Volume\n4 - Temperatura\n5 - Velocidade\n6 - Potência\n7 - Área\n8 - Tempo\n9 - Armazenamento\n10 - Energia\n0 - Sair\n");
         scanf("%d", &op);
         
         switch (op)
@@ -530,16 +530,15 @@ int main() {
             case 9:
                 printf("Conversor de unidades de armazenamento\n");
 		    
-    		double size;
-    		char unit;
+                double size;
+                char unit;
 
-   		printf("Digite o tamanho (quantidade) e a unidade (b, B, K, M, G, T): ");
-    		scanf("%lf %c", &size, &unit);
+                printf("Digite o tamanho (quantidade) e a unidade (b, B, K, M, G, T): ");
+                scanf("%lf %c", &size, &unit);
 
-    		printf("\nConversão de %.2f %c:\n", size, unit);
-    		converterTamanhoDados(size, unit);
-
-    return 0;
+                printf("\nConversão de %.2f %c:\n", size, unit);
+                converterTamanhoDados(size, unit);
+    
                 break;
 	    case 10:
                 printf("Conversor de Energia\n");
